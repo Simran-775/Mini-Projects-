@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(43, 42, 42);
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+p{
+    display:none;
+}
+header{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 204, 0);
+    padding: 1.5em;
+    color: black;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+img:hover{
+    border: 8px solid rgb(246, 192, 42);
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+    padding: 1em;
+    font-weight: 400;
+}
+
+.options-box{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.opt{
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius:50% ;
+}
+
+.choice1,.choice2{
+    margin-top: 1rem;
+}
+
+.button{
+    font-size: 2rem;
+    padding: .5rem 1.5em;
+    background-color: rgb(255, 191, 0);
+    color: black;
+    border-radius: 42px;
+}
+.end{
+    display: none;
+}
+
+.score-box{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.score{
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 835px){
+    .options-box{
+        flex-wrap: wrap;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
